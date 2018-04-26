@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* CSS Document */
+.site-header {
+	width: 100%;
+	height: 100px;
+	background-color: #343434;
+	position: fixed;
+	top: 0px;
+	z-index: 5;
+}
+.site-main {
+	width: 100%;
+	height: 869px;
+}
+.site-footer {
+	width: 100%;
+	height: 50px;
+	background-color: #343434;
+	position: fixed;
+	bottom: 0;
+	z-index: 5;	
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-top: 10px;
+}
+.subject {
+	font-family: 'cwTexFangSong', 'Serif';
+	font-size: 34px;
+	letter-spacing: 4px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 20px;
+	left: 58px;
+}
+.subject-En {
+	font-family: 'Times New Roman', 'serif';
+	font-size: 16px;
+	font-weight: lighter;
+	color: #FFFFFF;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+.copyright {
+	font-family: 'Noto Sans TC', serif;
+	font-size: 8px;
+	font-weight: 100;
+	color:#969696;
+	letter-spacing: 2px;
+	line-height: 15px;
+	padding-left: 55px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	
+}
