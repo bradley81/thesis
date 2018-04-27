@@ -3,10 +3,47 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
-
-.body {
-	cursor: url(https://github.com/bradley81/thesis/blob/master/cursor.svg)
+.hyper {
+	display:block;
+	width:500px;
+	height: 20px;
+	top: 30px;
+	float:right; /*整個區塊向右對齊*/
+	padding-bottom: 30px;
+	margin-top: 40px;
+	margin-right: 50px;
+	
+	
 }
+
+.menu, .menu li{
+	list-style: none;	/*將默認的列表符號去掉*/
+	padding:0px;	/*將默認的內邊去掉*/
+	margin: 0px;	/*將默認的外邊去掉*/
+}
+
+.menu li {
+	float:left;		/*往左浮動*/
+}
+
+.menu li a {
+	font-family: 'cwTexFangSong', 'Serif';
+	letter-spacing: 2px;
+	color:#FFFFFF;
+	font-size: 20px;
+	display:block;	/*將連結設為塊狀元素*/
+	width: 115px; /*設置寬度*/
+	height:50px; /*設定寬度*/
+	line-height: 50px; /*設定行高，將行高和高度設置同一個值，可以讓單行文本垂直居中*/
+	text-align: center; /*居中對齊文字*/
+	/*padding: 5px 10px; 	先調整上下，再調整左右*/  
+	text-decoration: none; 	/*去掉斜線*/
+}
+
+.menu li a:hover{
+	color:#FBE066;
+}
+
 .site-header {
 	width: 100%;
 	height: 100px;
