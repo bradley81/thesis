@@ -84,6 +84,7 @@
 		fnStartAnimation();
 		}
 	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body onload="init();">
 	<header class="site-header">
@@ -91,7 +92,7 @@
 		<div class="subject-En">Outside Chiayi Street-Chen Cheng-po</div>
 		<div class="hyper">
 			<ul class="menu">
-				<li><a href="http://yahoo.com.tw">首 頁</a></li>
+				<li><a href="index-1.html">首 頁</a></li>
 				<li><a href="">人物介紹</a></li>
 				<li><a href="">製作過程</a></li>
 				<li><a href="">相關網站</a></li>
@@ -106,6 +107,15 @@
 		</div>
 		</div>
 	</div>
+	<script type="text/javascript">    //mouseMoaveAnimation效果
+		var windowWidth = $(window).width();
+		$('#animation_container').mousemove(function(event){
+		var moveX = (($(window).width() / 2) - event.pageX)*0.3;
+		var moveY = (($(window).height() / 2) - event.pageY)*0.6;
+		$('#canvas').css('margin-left', moveX + 'px');
+		$('#canvas').css('margin-top', moveY + 'px');
+		});
+	</script>
 	<footer class="site-footer">
 		<div class="copyright">
 		Copyright@2018 Lin Yueh-feng, Graduate Institute of Human Resource and eLearning Technology, National Tsing Hua University / 網站版面最佳瀏覽解析度為1920*1080。
