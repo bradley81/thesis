@@ -33,6 +33,26 @@
 	background-color:#FFFFFF;
 }
 
+.reading{
+	top:50%;
+	left:50%;
+	padding: 10px;
+	font-family: 'Noto Sans TC', serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	border: none;
+	border-radius: 5px;
+	text-align:center;
+	position: fixed;
+	z-index: 8;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.reading::after {
+	content: ''
+}
+
 .handsome{
 	width: auto;
 	height: auto;
