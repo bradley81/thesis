@@ -34,9 +34,13 @@
 }
 
 .reading{
+	color: #FAFAFA;
+	background-color:#0D0D0D;
+	opacity: 0.8;
 	top:50%;
 	left:50%;
 	padding: 10px;
+	width: 150px;
 	font-family: 'Noto Sans TC', serif;
 	font-size: 16px;
 	letter-spacing: 3px;
@@ -47,10 +51,39 @@
 	z-index: 8;
 	transition: all 0.5s;
 	cursor: pointer;
+	display: inline-block;
+	margin: 0px;
+}
+.reading:hover {
+	background-color: #351D04;
+	opacity: 1;
+	box-shadow: 0px 0px 15px black;
+	transition: 0.5s;
+}
+.reading span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	
 }
 
-.reading::after {
-	content: ''
+.reading span::after {
+	content: '≫';
+	opacity: 0;
+	top:0;
+	right: -20px;
+	position: absolute;
+	transition: 0.5s;
+}
+
+.reading:hover span {
+	padding-right: 20px;
+}
+
+.reading:hover span:after{
+	opacity: 1;
+	right:0;
 }
 
 .handsome{
