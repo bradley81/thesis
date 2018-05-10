@@ -12,17 +12,6 @@
 	position: fixed;
 }
 
-#dom_overlay_container{
-	pointer-events:none;
-	overflow:hidden; 
-	width:120%; 
-	height:120%; 
-	position: absolute; 
-	left: 0px; 
-	top: 0px; 
-	display: block;
-}
-
 #canvas	{
 	width:150%;
 	height:150%;
@@ -30,7 +19,9 @@
 	top:-9%;
 	position: absolute;
 	display: block; 	
-	background-color:#FFFFFF;
+	background-image: url(../images/BG.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .reading{
