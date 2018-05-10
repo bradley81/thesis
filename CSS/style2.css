@@ -1,9 +1,86 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 /* CSS Document */
-
-.initial{
+.bcd{
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
-	background-color: #0F0D0D;
+	background-color:#070707;
+	
+}
+
+.line1{
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 0.5s;
+}
+
+.line2{
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 1.5s;
+}
+
+.line3{
+	
+}
+
+.line4{
+	
+}
+
+.line5{
+	
+}
+
+.line6{
+	
+}
+
+@keyframes script{
+	0% {
+		opacity: 0
+	}
+	25%{
+		opacity: 1
+	}
+	50%{
+		opacity: 1
+	}
+	
+	100%{
+		opacity: 0
+	}
 }
