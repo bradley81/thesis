@@ -23,12 +23,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 2.2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.2s;
 }
 
 .line2{
@@ -45,28 +45,100 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 4s;
+	-webkit-animation-duration: 2.5s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.8s;
 }
 
 .line3{
-	
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 3.6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 3.8s;
 }
 
 .line4{
-	
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 6.8s;
 }
 
 .line5{
-	
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 2.6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 9.6s;
 }
 
 .line6{
-	
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'cwTeXYen', sans-serif;
+	font-size: 4vmin;
+	font-weight: 800;
+	text-align:center;
+	letter-spacing: 5vmin ;
+	position: fixed;
+	opacity: 0;
+	-webkit-animation-name: script;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: steps(1, end);
+	-webkit-animation-delay: 11.6s;
 }
 
 @keyframes script{
