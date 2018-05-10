@@ -14,8 +14,8 @@
 	color: #FAFAFA;
 	background-color: #373737;
 	opacity: 0;
-	top:50%;
-	left:45%;
+	top:50vh;
+	left:45vw;
 	padding: 10px;
 	width: 150px;
 	font-family: 'Noto Sans TC', serif;
