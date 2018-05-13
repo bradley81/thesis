@@ -5,13 +5,16 @@
 <title>嘉義街外-陳澄波</title>
 <link rel="stylesheet" href="CSS/normalize.css">
 <link rel="stylesheet" href="CSS/style2.css">
-<audio autoplay preload="auto">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+	<div id="loader">
+	<audio autoplay preload="auto">
 	<source src="sounds/1947.ogg" type="audio/ogg"/>
 	<source src="sounds/1947.mp3" type="audio/mp3"/>
-Your browser does not support the audio element.
-</audio>
-</head>
-<body>
+	Your browser does not support the audio element.
+	</audio>
 	<div class="bcd"></div>
 	<div class="line1">一九四七年</div>
 	
@@ -25,5 +28,11 @@ Your browser does not support the audio element.
 	
 	<div class="line6">做最後一次的注視</div>	
 	<a href=""><button class="reading"><span>下一頁</span></button></a>
+	</div>
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('loader').show(1000)
+	})
+	</script>
 </body>
 </html>
