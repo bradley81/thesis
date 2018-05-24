@@ -162,12 +162,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 4s;
+	-webkit-animation-duration: 4.4s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 8.3s;
+	-webkit-animation-delay: 8s;
 }
 
 @keyframes script{
