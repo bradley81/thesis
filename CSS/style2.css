@@ -35,7 +35,7 @@
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-delay: 14.5s;
+	-webkit-animation-delay: 11.7s;
 }
 
 .line1{
@@ -52,12 +52,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 2.2s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 0.2s;
+	-webkit-animation-delay: 0.1s;
 }
 
 .line2{
@@ -74,12 +74,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 2.5s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 1.8s;
+	-webkit-animation-delay: 1.7s;
 }
 
 .line3{
@@ -96,12 +96,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 3.6s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 3.8s;
+	-webkit-animation-delay: 3.2s;
 }
 
 .line4{
@@ -123,7 +123,7 @@
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 6.8s;
+	-webkit-animation-delay: 4.5s;
 }
 
 .line5{
@@ -140,12 +140,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 2.6s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 9.6s;
+	-webkit-animation-delay: 7s;
 }
 
 .line6{
@@ -162,12 +162,12 @@
 	position: fixed;
 	opacity: 0;
 	-webkit-animation-name: script;
-	-webkit-animation-duration: 3s;
+	-webkit-animation-duration: 4s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: steps(1, end);
-	-webkit-animation-delay: 11.6s;
+	-webkit-animation-delay: 8.3s;
 }
 
 @keyframes script{
