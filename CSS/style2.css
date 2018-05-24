@@ -2,35 +2,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
-.progress{
-	background-color: #000000;
-	color: #FFFFFF;
-	height: 100vh;
-	position: absolute;
-	width: 100vw;
-	z-index: 99;
-}
-.progress-bar{
-	border-top: 1px solid #A0A0A0;
-	position: absolute;
-	top: 50vh;
-	width: 0vw;
-	z-index: 99;
-}
-.progress-text{
-	font-family: 'cwTeXYen', sans-serif;
-	font-size: 3vmin;
-	margin-top: 10px;
-	position: absolute;
-	text-align: center;
-	top: 50vh;
-	width: 100vw;
-	z-index: 99;
-}
-.progress-complete .progress-bar{
-	border-top-color: #FFFFFF;
-	z-index: 99;
-}
 .bcd{
 	width: 100vw;
 	height: 100vh;
