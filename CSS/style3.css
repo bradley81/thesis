@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
 
 .header{
@@ -24,4 +27,22 @@
 	height: 100vh;
 	position: fixed;
 	z-index: 1;
+}
+
+.index a{
+	color: #FFFFFF;
+	font-family: 'cwTeXFangSong', 'Serif';
+	letter-spacing: 2px;
+	font-size: 4vmin;
+	display:block;	/*將連結設為塊狀元素*/
+	width: 8vw; /*設置寬度*/
+	height:11.5vh; /*設定寬度*/
+	line-height: 11.5vh; /*設定行高，將行高和高度設置同一個值，可以讓單行文本垂直居中*/
+	text-align: center; /*居中對齊文字*/
+	text-decoration: none; 	/*去掉斜線*/
+	position: fixed;
+	right: 6vw;
+}
+.index a:hover{
+	color:#FBE066;
 }
