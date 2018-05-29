@@ -15,7 +15,7 @@
 	color: #FAFAFA;
 	background-color: #373737;
 	opacity: 0;
-	top:50vh;
+	top:80vh;
 	left:45vw;
 	padding: 10px;
 	width: 150px;
@@ -36,7 +36,7 @@
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-delay: 11.7s;
+	-webkit-animation-delay: 30.3s;
 }
 
 #myVideo{
