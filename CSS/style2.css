@@ -15,7 +15,7 @@
 	color: #FAFAFA;
 	background-color: #373737;
 	opacity: 0;
-	top:80vh;
+	top:90vh;
 	left:45vw;
 	padding: 10px;
 	width: 150px;
@@ -44,7 +44,6 @@
 	right: 0;
 	bottom: 0;
 	width: 100vw;
-	height: 100vh;
 	z-index: 3;
 }
 
