@@ -36,6 +36,7 @@
 	position: fixed;
 	width: 40px;
 	height: 40px;
+	line-height: 40px;
 	z-index: 11;
 	color: #FFFFFF;
 	font-size: 30px;
@@ -90,12 +91,11 @@
 	left: 50%;
 	padding: 10px;
 	width: 150px;
-	height: 40px;
 	font-family: 'Noto Sans TC', serif;
 	font-size: 16px;
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 6px;
 	text-align:center;
 	position: absolute;
 	z-index: 8;
@@ -103,6 +103,13 @@
 	cursor: pointer;
 	display: inline-block;
 	margin-left: -75px;
+}
+
+.reading span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 }
 .reading:hover {
 	background-color: #3E3E3E;
@@ -119,7 +126,7 @@
 }
 
 .reading span::after {
-	content: '≫';
+	content: '\00bb';
 	opacity: 0;
 	top:0;
 	right: -20px;
@@ -129,9 +136,10 @@
 
 .reading:hover span {
 	padding-right: 20px;
+	transition: 0.5s;
 }
 
-.reading:hover span:after{
+.reading:hover span::after{
 	opacity: 1;
 	right:0;
 }
@@ -175,7 +183,7 @@
 	font-size: 20px;
 	display:block;	/*將連結設為塊狀元素*/
 	width: 120px; /*設置寬度*/
-	height:50px; /*設定寬度*/
+	height:50px; /*設定高度*/
 	line-height: 50px; /*設定行高，將行高和高度設置同一個值，可以讓單行文本垂直居中*/
 	text-align: center; /*居中對齊文字*/
 	/*padding: 5px 10px; 	先調整上下，再調整左右*/  
