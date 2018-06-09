@@ -21,13 +21,30 @@
 		</div>
 	</header>
 	<img class="handsome" src="images/帝展動態(黑線).gif" alt="charactor">
-	<a href="index-2.html"><button class="reading"><span>開始閱讀</span></button></a>
+	<a href="index-2.html"><button class="reading"><span>開始閱讀</span></button></a>	
+	<div id="hebe"></div>
+	<div id="btn" onClick="alert();"><span>×</span></div>
+	<div id="model">
+		<h2><span style="font-size: 25px; color: #FFDA3A; letter-spacing: 13px;">貼心叮嚀</span></h2>
+		<p style="color: #FFFFFF; font-size: 16px; letter-spacing: 2px; line-height: 22px">為了擁有最佳的瀏覽體驗，本網站需使用電腦版 <span style="color:#FFDA3A; ">Google Chrome</span> 或 <span style="color:#FFDA3A;">Fire Fox</span> 瀏覽器閱覽</p>
+	</div>
 	<div class="site-main">
 		<div id="animation_container">
 		<div id="canvas">
 		</div>	
 		</div>
 	</div>
+	<script typr="text/javascript">
+		function alert() {
+			var x=document.getElementById("btn");
+			var y=document.getElementById("hebe");
+			var z=document.getElementById("model");
+		x.style.visibility="hidden";
+		y.style.visibility="hidden";
+		z.style.visibility="hidden";
+		
+		}
+	</script>
 	<script type="text/javascript">    //mouseMoaveAnimation效果
 		var windowWidth = $(window).width();
 		$('#animation_container').mousemove(function(event){
@@ -39,7 +56,7 @@
 	</script>
 	<footer class="site-footer">
 		<div class="copyright">
-		Copyright@2018 Lin Yueh-feng, Graduate Institute of Human Resource and eLearning Technology, National Tsing Hua University / 網站版面最佳瀏覽解析度為1920*1080。建議使用 Google Chrome 或 Firefox 瀏覽器閱覽。The best way to view our website is at 1920*1080 pixel screen resolution.
+		Copyright@2018 Lin Yueh-feng, Graduate Institute of Human Resource and eLearning Technology, National Tsing Hua University / 網站版面最佳瀏覽解析度為1920*1080。請使用電腦版 Google Chrome 或 Firefox 瀏覽器閱覽。The best way to view our website is at 1920*1080 pixel screen resolution.
 		</div>
 	</footer>
 	
