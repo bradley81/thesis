@@ -38,6 +38,11 @@
 		function setvolume(){
 			audio.volume = volumeslider.value;
 		}
+		function myFunction(){
+			if (audio.paused){
+				audio.play();
+			}
+		}
 	}
 	window.addEventListener("load, initAudioPlayer");
 	</script>
