@@ -4,6 +4,27 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
 
+.next a span{
+	color: #FFFFFF;
+	font-size: 10vmin;
+	ont-family: 'Noto Sans TC', 'Serif';
+	position: absolute;
+	height: 11.5vh;
+	line-height: 11.5vh;
+	left: 50%;
+	margin-left:20vw; 
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.5s ;
+}
+
+.next a span:hover{
+	display: inline-block;
+	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
+	left: 50.5%;
+}
+
 .header{
 	width: 100vw;
 	height: 17.5vh;
