@@ -6,7 +6,7 @@
 
 .next a span{
 	color: #FFFFFF;
-	font-size: 10vmin;
+	font-size: 7vmin;
 	ont-family: 'Noto Sans TC', 'Serif';
 	position: absolute;
 	height: 11.5vh;
@@ -55,9 +55,8 @@
 	color: #FFFFFF;
 	font-family: 'cwTeXFangSong', 'Serif';
 	letter-spacing: 2px;
-	font-size: 4vmin;
+	font-size: 3vmin;
 	display:block;	/*將連結設為塊狀元素*/
-	width: 8vw; /*設置寬度*/
 	height:11.5vh; /*設定寬度*/
 	line-height: 11.5vh; /*設定行高，將行高和高度設置同一個值，可以讓單行文本垂直居中*/
 	text-align: center; /*居中對齊文字*/
