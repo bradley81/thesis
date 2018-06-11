@@ -18,7 +18,6 @@
 
 .previous a span:hover{
 	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
-	left: 49vw;
 }
 
 
@@ -37,7 +36,6 @@
 
 .next a span:hover{
 	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
-	left: 56vw;
 }
 
 .footer {
