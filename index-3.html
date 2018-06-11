@@ -17,9 +17,24 @@
 	
 	<div class="main">
 		<img src="images/opening/02.jpg" style="width: 100vw; position: fixed;" alt="01">
-		<img src="images/opening/02 story/02-story-2.png" style="position: fixed; width: 30vw; top:8vh; left: 2vw;" alt="02">
+		<img src="images/opening/02 story/02-story-2.png" style="position: fixed; width: 30vw; top:3vh; left: 2vw;" alt="02">
 		<img src="images/opening/02 story/02-story.png" style="position: fixed; width: 40vw; bottom: 15vh; right: 5vw;" alt="03">
 	</div>
+	
+	<audio autoplay id="myaudio">
+	<source src="sounds/index-3/morning.mp3" loop type="audio/mpeg">
+	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
+	</audio>
+	
+	<script type="text/javascript">
+		var audio = document.getElementById("myaudio");
+		function myFunction(){
+			if(audio.paused){
+				audio.play				
+			}
+		}
+		
+	</script>
 	
 </body>
 </html>

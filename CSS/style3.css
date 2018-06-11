@@ -5,7 +5,7 @@
 /* CSS Document */
 .previous a span{
 	color: #FFFFFF;
-	font-size: 7vmin;
+	font-size: 5vmin;
 	position: fixed;
 	height: 11.5vh;
 	line-height: 11.5vh;
@@ -23,7 +23,7 @@
 
 .next a span{
 	color: #FFFFFF;
-	font-size: 7vmin;
+	font-size: 5vmin;
 	position: fixed;
 	height: 11.5vh;
 	line-height: 11.5vh;
