@@ -22,7 +22,7 @@
 .next a span:hover{
 	display: inline-block;
 	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
-	left: 50.5%;
+	left: 51%;
 }
 
 .header{
@@ -63,6 +63,7 @@
 	text-align: center; /*居中對齊文字*/
 	text-decoration: none; 	/*去掉斜線*/
 	position: fixed;
+	display: inline-block;
 	right: 6vw;
 }
 .index a:hover{
