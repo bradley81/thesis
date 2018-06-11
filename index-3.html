@@ -24,27 +24,13 @@
 		<img src="images/opening/02 story/02-story.png" style="position: fixed; width: 40vw; bottom: 15vh; right: 5vw;" alt="03">
 	</div>
 	
+	<audio autoplay id="myaudio">
+	<source src="sounds/index-3/morning.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
+	</audio>
+	
 	<script type="text/javascript">
-		var audio, volumeslider;
-		function initAudioPlayer(){
-		audio = new Audio()
-		audio.src="sounds/index-3/morning.mp3";
-		audio.loop=true;
-		audio.autoplay= true;
-		
-		volumeslider=document.getElementById("myRange");
-		addEventListener("mousemove", setvolume);
-		
-		function setvolume(){
-			audio.volume = volumeslider.value;
-		}
-		function myFunction(){
-			if (audio.paused){
-				audio.play();
-			}
-		}
-	}
-	window.addEventListener("load, initAudioPlayer");
+		document.getElementById("myaudio").play;
 	</script>
 	
 </body>
