@@ -3,8 +3,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
-
-.next a span{
+.previous a span{
 	color: #FFFFFF;
 	font-size: 7vmin;
 	position: fixed;
@@ -13,21 +12,33 @@
 	left: 50vw;
 	padding-left: 10px;
 	text-decoration: none;
+	transform: scale(-1);
 	transition: all 0.5s ;
+	z-index: 9;
+}
+
+.previous a span:hover{
+	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
+	left: 49vw;
+}
+
+
+.next a span{
+	color: #FFFFFF;
+	font-size: 7vmin;
+	position: fixed;
+	height: 11.5vh;
+	line-height: 11.5vh;
+	left: 55vw;
+	padding-left: 10px;
+	text-decoration: none;
+	transition: all 0.5s ;
+	z-index: 8;
 }
 
 .next a span:hover{
 	text-shadow: 0 0 30px white, 0 0 10px white, 0 0 0.5px white, 0 0 0.5px white;
-	left: 51vw;
-}
-
-.header{
-	width: 100vw;
-	height: 17.5vh;
-	background-color: #101010;
-	position: fixed;
-	top: 0;
-	z-index: 8;
+	left: 56vw;
 }
 
 .footer {
