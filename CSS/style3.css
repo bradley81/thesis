@@ -12,7 +12,6 @@
 	left: 50vw;
 	padding-left: 10px;
 	text-decoration: none;
-	transform: scale(-1);
 	transition: all 0.5s ;
 	z-index: 9;
 }
