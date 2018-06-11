@@ -14,7 +14,7 @@
 	<div class="next"><a href="index-4.html"><span>▶︎</span></a></div>
 	<img src="images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
 		<div class="slideaudio">
-			<input type="range" min="0" max="1" value="0.5" step="0.1" class="slider" id="myRange">
+			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" id="myRange">
 		</div>
 	</div>
 	
@@ -24,26 +24,22 @@
 		<img src="images/opening/02 story/02-story.png" style="position: fixed; width: 40vw; bottom: 15vh; right: 5vw;" alt="03">
 	</div>
 	
-	<audio autoplay loop id="myaudio">
-	<source src="sounds/index-3/morning.mp3" loop type="audio/mpeg">
-	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
-	</audio>
-	
 	<script type="text/javascript">
-		var audio = document.getElementById("myaudio");
-		function myFunction(){
-			if(audio.paused){
-				audio.play				
-			}
-		}
-	</script>
-	<script type="text/javascript">
-		var slider = document.getElementById("myRange");
-		var volume = document.getElementById("myaudio");
-		function setvol(){
-			volume.volume=slider.value;
-		}
+		var audio, volumeslider;
+		function initAudioPlayer(){
+		audio = new Audio()
+		audio.src="sounds/index-3/morning.mp3";
+		audio.loop=true;
+		audio.autoplay= true;
 		
+		volumeslider=document.getElementById("myRange");
+		addEventListener("mousemove", setvolume);
+		
+		function setvolume(){
+			audio.volume = volumeslider.value;
+		}
+	}
+	window.addEventListener("load, initAudioPlayer");
 	</script>
 	
 </body>
