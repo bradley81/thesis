@@ -39,8 +39,14 @@
 		}
 		
 		function ap(){
-			loud.src = "images/speaker2.png";
-			audio.volume = slider.value = 0;
+			if(audio.volume!=0 || slider.value !=0){
+				loud.src = "images/speaker2.png";
+				audio.volume = slider.value = 0;
+			}else {
+				loud.src = "images/speaker.png";
+				audio.volume = slider.value = 50;
+			}
+			
 		}
 		
 		
