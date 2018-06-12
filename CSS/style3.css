@@ -23,7 +23,7 @@
 
 .slider:hover{
 	opacity: 1;
-	box-shadow: 0 0 10px 5px white, 0 0 3px 1px white, 0 0 1px 0.1px white;
+	box-shadow: 0 0 10px 3px white, 0 0 1px 0.1px white;
 }
 
 .slider::-webkit-slider-thumb{
