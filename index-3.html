@@ -36,9 +36,8 @@
 		var loud = document.getElementById("ker"); 
 		function volcotrl(){
 			audio.volume = slider.value;
-			if(audio.volume=0 || slider.value=0){
+			if(audio.volume = 0 && slider.value = 0){
 				loud.src = "images/speaker2.png";
-				audio.volume = slider.value = 0;
 			}
 		}
 		
