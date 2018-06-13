@@ -5,6 +5,24 @@
 	<link rel="stylesheet" href="CSS/style3.css">
 	<link rel="stylesheet" href="CSS/normalize.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		#blur01{
+			animation: background 10s ease-in-out infinite alternate; 
+		}
+		#blur02{
+			animation: people 10s ease-in-out infinite alternate; 
+		}
+		
+		@keyframes background{
+			from{left: -15vw;}
+			to{left: 0vw;}
+		}
+		
+		@keyframes people{
+			from{right: -20vw;}
+			to{right: -10vw;}
+		}
+	</style>
 </head>
 
 <body>
@@ -15,8 +33,8 @@
 	
 	<div class="footer">
 	<div class="index"><a href="index-1.html">| 回首頁 |</a></div>
-	<div class="previous"><a href="index-3.html"><span>◀︎</span></a></div>
-	<div class="next"><a href="index-5.html"><span>▶︎</span></a></div>
+	<div class="previous"><a href="index-4.html"><span>◀︎</span></a></div>
+	<div class="next"><a href="index-6.html"><span>▶︎</span></a></div>
 	<img src="images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
 		<div class="slideaudio">
 			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
@@ -25,12 +43,13 @@
 	</div>
 	
 	<div class="main">
-		<img src="images/opening/01.jpg" style="width: 100vw; position: fixed;top: -70px;" alt="01">
-		<img src="images/opening/01-story/car" style="position: fixed; width: 40vw; top: 400px; transform: rotate(3deg);" alt="02">
+		<img id="blur01" src="images/opening/03-story/01story2.jpg" style="width: 100vw; position: fixed;top: -70px; width: 140vw;" alt="01">
+		<img src="images/opening/03-story/01story2.gif" style="position: fixed; height:90vh; left: 20vw; top: 0px;" alt="02">
+		<img id="blur02" src="images/opening/03-story/01story3.png" style="position: fixed; height:90vh; top: 0px;" alt="03">
 	</div>
 	
 	<audio autoplay id="myaudio">
-	<source src="sounds/index-4/car.mp3" type="audio/mpeg">
+	<source src="" type="audio/mpeg">
 	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
 	</audio>
 	
