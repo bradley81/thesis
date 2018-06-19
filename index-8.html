@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>嘉義街外-陳澄波</title>
+	<link rel="stylesheet" href="CSS/style3.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		#clouds{
+			animation: colouds 10s linear infinite normal; 
+		}
+		@keyframes clouds {
+			from{rigth:0vw;}
+			to{right:-100vw;}
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="header">
+		
+	</div>
+	
+	<div class="footer">
+	<div class="index"><a href="index-1.html">| 回首頁 |</a></div>
+	<div class="previous"><a href="index-7.html"><span>◀︎</span></a></div>
+	<div class="next"><a href="index-8.html"><span>▶︎</span></a></div>
+	<img src="images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
+		<div class="slideaudio">
+			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
+		</div>
+	<img src="images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw;bottom: 4.2vh;cursor: pointer;" alt="0">
+	</div>
+	
+	<div class="main">
+		<img src="images/opening/08-story/07-8.jpg" style="height: 101%; position: fixed; bottom: 11.5vh; right: 0vw; z-index: 1;" alt="01">
+		<img src="images/opening/08-story/07-7.png" id="clouds" style="height: 101%; position: fixed; bottom: 11.5vh; right: 0vw; z-index: 2;" alt="02">
+		<img src="images/opening/08-story/07-6.png" id="moutain01" style="height: 40%; position: fixed; bottom: 20vh; right: 0vw; z-index: 3;" alt="03">
+		<img src="images/opening/08-story/07-5.png" id="moutain02" style="height: 35%; position: fixed; bottom: 20vh; right: 0vw; z-index: 4;" alt="04">
+		<img src="images/opening/08-story/07-4.png" id="bush" style="height: 10%; position: fixed; bottom: 24vh; right: 0vw; z-index: 5;" alt="05">
+		<img src="images/opening/08-story/07-3.png" id="pole" style="height: 50%; position: fixed; bottom: 26vh; right: 0vw; z-index: 6;" alt="06">
+		<img src="images/opening/08-story/07-9.png" style="height: 20%; position: fixed; bottom: 26vh; right: 0vw; z-index: 6;" alt="09">
+		<img src="images/opening/08-story/07-1-5.png" style="height: 19%; position: fixed; bottom: 40vh; left: 18vw; z-index: 6;" alt="14">
+		<img src="images/opening/08-story/07-1-3.png" id="tire02" style="height: 12.8%; position: fixed; bottom: 26vh; left: 2vw; z-index: 6;" alt="12">
+		<img src="images/opening/08-story/07-1-2.png" style="height: 23%; position: fixed; bottom: 30vh; left: 0vw; z-index: 6;" alt="10">
+		<img src="images/opening/08-story/07-1-4.png" id="tire01" style="height: 12.8%; position: fixed; bottom: 26vh; left: 21vw; z-index: 6;" alt="13">
+		<img src="images/opening/08-story/07-1-1.png" style="height: 16.7%; position: fixed; bottom: 34.7vh; left: 16.5vw; z-index: 6;" alt="11">
+		<img src="images/opening/08-story/07-2.png" id="grass01" style="height: 18%; position: fixed; bottom: 11vh; right: 0vw; z-index: 7;" alt="07">
+		<img src="images/opening/08-story/07-1.png" id="grass02" style="height: 6%; position: fixed; bottom: 11.5vh; right: 0vw; z-index: 8;" alt="08">
+		<img src="images/opening/08-story/07-10.png" style="height: 30vh; position: fixed; z-index: 9;" alt="15">
+	</div>
+	
+	<audio autoplay id="myaudio">
+	<source src="" type="audio/mpeg">
+	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
+	</audio>
+	
+	<script type="text/javascript">
+		var audio=document.getElementById("myaudio");
+		var slider=document.getElementById("myRange");
+		var loud = document.getElementById("ker"); 
+		function volcotrl(){
+				audio.volume = slider.value;
+				if(audio.volume==0 && slider.value==0){
+				   loud.src = "images/speaker2.png";
+				   }else{
+				   loud.src = "images/speaker.png";
+				   }
+			}
+		
+		function ap(){
+			if(audio.volume!=0 || slider.value !=0){
+				loud.src = "images/speaker2.png";
+				audio.volume = slider.value = 0;
+			}else {
+				loud.src = "images/speaker.png";
+				audio.volume = slider.value = 0.5;
+			}
+			
+		}
+	</script>
+	
+	
+</body>
+</html>
