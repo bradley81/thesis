@@ -7,11 +7,19 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<style>
 		#clouds{
-			animation: colouds 10s linear infinite normal; 
+			animation: clouds 80s linear infinite normal; 
 		}
 		@keyframes clouds {
-			from{rigth:0vw;}
-			to{right:-100vw;}
+			from{right: 80vw;}
+			to{right: -350vw;}
+		}
+		
+		#moutain01{
+			animation: mou 70s linear infinite normal;
+		}
+		@keyframes mou {
+			from{right: 0vw;}
+			ro{right: -200vw;}
 		}
 	</style>
 </head>
@@ -35,8 +43,8 @@
 	
 	<div class="main">
 		<img src="images/opening/08-story/07-8.jpg" style="height: 101%; position: fixed; bottom: 11.5vh; right: 0vw; z-index: 1;" alt="01">
-		<img src="images/opening/08-story/07-7.png" id="clouds" style="height: 101%; position: fixed; bottom: 11.5vh; right: 0vw; z-index: 2;" alt="02">
-		<img src="images/opening/08-story/07-6.png" id="moutain01" style="height: 40%; position: fixed; bottom: 20vh; right: 0vw; z-index: 3;" alt="03">
+		<img src="images/opening/08-story/07-7.png" id="clouds" style="height: 101%; position: fixed; bottom: 11.5vh; z-index: 2;" alt="02">
+		<img src="images/opening/08-story/07-6.png" id="moutain01" style="height: 40%; position: fixed; bottom: 20vh; z-index: 3;" alt="03">
 		<img src="images/opening/08-story/07-5.png" id="moutain02" style="height: 35%; position: fixed; bottom: 20vh; right: 0vw; z-index: 4;" alt="04">
 		<img src="images/opening/08-story/07-4.png" id="bush" style="height: 10%; position: fixed; bottom: 24vh; right: 0vw; z-index: 5;" alt="05">
 		<img src="images/opening/08-story/07-3.png" id="pole" style="height: 50%; position: fixed; bottom: 26vh; right: 0vw; z-index: 6;" alt="06">
