@@ -7,7 +7,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<style>
 		#clouds{
-			animation: clouds 80s linear infinite normal; 
+			animation: clouds 100s linear infinite normal; 
 		}
 		@keyframes clouds {
 			from{right: 80vw;}
@@ -19,12 +19,63 @@
 		}
 		@keyframes mou {
 			from{right: 0vw;}
-			ro{right: -200vw;}
+			to{right: -200vw;}
 		}
 		
 		#moutain02{
-			animation: mou 40s linear infinite normal;
+			animation: mou2 30s linear infinite normal;
 		}
+		
+		@keyframes mou2 {
+			from{right: 0vw;}
+			to{right: -220vw;}
+		}
+		
+		#bush{
+			animation: bu 5s linear infinite normal;
+		}
+		
+		@keyframes bu {
+			from{right: 0vw;}
+			to{right: -80vw;}
+		}
+		
+		#pole{
+			animation: po 5s linear infinite normal;
+		}
+		@keyframes po {
+			from{right: 0vw;}
+			to{right: -100vw;}
+		}
+		
+		#grass01{
+			animation: gra 2s linear infinite normal;
+		}
+		@keyframes gra{
+			from{right: 0vw;}
+			to{right: -60vw;}
+		}
+		
+		#grass02{
+			animation: gra2 2s linear infinite normal;
+		}
+		@keyframes gra2{
+			from{right: 0vw;}
+			to{right: -40vw;}
+		}
+		
+		#tire01{
+			animation: tire2 0.5s linear infinite normal;
+		}
+		@keyframes tire2{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(-360deg);}
+		}
+		
+		#tire02{
+			animation: tire2 0.5s linear infinite normal;
+		}
+		
 	</style>
 </head>
 
