@@ -12,8 +12,8 @@
 }
 
 .reading{
-	color: #FAFAFA;
-	background-color: #373737;
+	color: #323232;
+	background-color: #F4F4F4;
 	opacity: 0;
 	bottom:50vh;
 	left:45vw;
@@ -22,7 +22,7 @@
 	font-family: 'Noto Sans TC', serif;
 	font-size: 16px;
 	letter-spacing: 3px;
-	border: none;
+	border: 5px solid #323232;
 	border-radius: 5px;
 	text-align:center;
 	position: fixed;
