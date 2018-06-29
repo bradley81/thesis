@@ -30,13 +30,13 @@
 	cursor: pointer;
 	display: inline-block;
 	margin: 0px;
-	-webkit-animation-name: next; 
-	-webkit-animation-duration: 5s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-direction: normal;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-delay: 30.3s;
+	animation-name: next; 
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 30.3s;
 }
 
 #myVideo{
