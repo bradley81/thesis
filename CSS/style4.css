@@ -12,7 +12,7 @@
 }
 
 .reading{
-	color: #323232;
+	color: #505050;
 	background-color: #F4F4F4;
 	opacity: 0;
 	bottom:50vh;
@@ -22,7 +22,7 @@
 	font-family: 'Noto Sans TC', serif;
 	font-size: 16px;
 	letter-spacing: 3px;
-	border: 5px solid #323232;
+	border: 2px solid #505050;
 	border-radius: 5px;
 	text-align:center;
 	position: fixed;
@@ -36,7 +36,7 @@
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 89s;
+	animation-delay: 93s;
 }
 
 #myVideo{
