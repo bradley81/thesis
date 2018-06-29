@@ -26,6 +26,14 @@
 	box-shadow: 0 0 10px 3px white, 0 0 1px 0.1px white;
 }
 
+.footer {
+	width: 100vw;
+	height: 11.5vh;
+	position: fixed;
+	bottom: 0;
+	z-index: 8;
+}
+
 .slider::-webkit-slider-thumb{
 	-webkit-appearance:none;
 	appearance:none;
