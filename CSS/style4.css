@@ -15,7 +15,7 @@
 	color: #FAFAFA;
 	background-color: #373737;
 	opacity: 0;
-	bottom:9vh;
+	bottom:50vh;
 	left:45vw;
 	padding: 10px;
 	width: 150px;
@@ -36,7 +36,7 @@
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 85s;
+	animation-delay: 89s;
 }
 
 #myVideo{
