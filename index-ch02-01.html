@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>嘉義街外-陳澄波</title>
+<link rel="stylesheet" href="CSS/normalize.css">
+<link rel="stylesheet" href="CSS/style6.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<style>
+	.loader{
+		color: #FFFFFF;
+		font-size: 12px;
+		border: 16px solid #787878;
+		border-radius: 50%;
+		border-top: 16px solid #FFFFFF;
+		width: 120px;
+		height: 120px;
+		position: fixed;
+		z-index: 4;
+		left: 50%;
+		top: 50%;
+		margin-left: -60px;
+		margin-top: -60px;
+		animation: spin 0.5s linear infinite;
+		}
+	
+	@keyframes spin{
+		0% { transform: rotate(0deg);}
+		100% {transform: rotate(360deg);}
+		
+	}
+</style>
+</head>
+
+<body onLoad="myFunction()">
+	<div class="bcd"></div>
+	<video autoplay  id="myVideo">
+		<source src="video/03/Produce (2) (1).mp4" type="video/mp4">
+		Your browser does not support HTML5 video. 請使用 Google Chrome或Fire Fox瀏覽。
+	</video>
+	<div class="loader" id="lad"></div>
+	
+	<script>
+		function myFunction(){
+			var x = document.getElementById("lad");
+			x.style.visibility="hidden";
+		}
+	</script>  
+		
+	<a href="index-ch02-02.html"><button class="reading"><span>下一頁</span></button></a>
+</body>
+</html>
