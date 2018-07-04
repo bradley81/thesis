@@ -3,6 +3,69 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
+.reading{
+	color: #FAFAFA;
+	background-color: #373737;
+	opacity: 1;
+	bottom:9vh;
+	left:45vw;
+	padding: 10px;
+	width: 150px;
+	font-family: 'Noto Sans TC', serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	border: none;
+	border-radius: 5px;
+	text-align:center;
+	position: fixed;
+	z-index: 11;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0px;
+}
+
+.slideaudio{
+	width:6vw;
+	position: fixed;
+	bottom: 4.9vh;
+	right: 20vw;
+}
+.slider{
+	-webkit-appearance:none;
+	width: 100%;
+	height: 0.5vh;
+	border-radius: 5px;
+	background: #3E3E3E;
+	outline: none;
+	opacity: 0.8;
+	-webkit-transition:.2s;
+	transition: .2s;
+}
+
+.slider:hover{
+	opacity: 1;
+	box-shadow: 0 0 10px 3px white, 0 0 1px 0.1px white;
+}
+
+.slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	appearance:none;
+	width: 1.5vh;
+	height: 1.5vh;
+	border-radius: 50%;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+	width: 1.5vh;
+	height: 1.5vh;
+	border-radius: 50%;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+
 .main {
 	width: 100vw;
 	background-color: black;
