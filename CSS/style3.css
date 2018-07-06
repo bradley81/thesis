@@ -3,6 +3,14 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* CSS Document */
+.ma-cont{
+	font-family: 'Noto Sans TC', serif;
+	line-height: 35px;
+	letter-spacing: 4px;
+	color: #454545;
+	font-weight: bolder;
+}
+
 .slideaudio{
 	width:6vw;
 	position: fixed;
