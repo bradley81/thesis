@@ -2,34 +2,45 @@
 <html><head>
 <meta charset="UTF-8">
 <title>嘉義街外-陳澄波</title>
-	<link rel="stylesheet" href="../CSS/style5.css">
+	<link rel="stylesheet" href="../CSS/style3.css">
 	<link rel="stylesheet" href="../CSS/normalize.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
 	
+	<div class="header">
+		
+	</div>
+	
 	<div class="footer">
 	<div class="index"><a href="../index-1.html">| 回首頁 |</a></div>
-	<div class="title"><a href="index-ch04-01.html">重新體驗</a></div>
-	<div class="nex"><a href="../ch05/index-ch05-final-back.html">下一章</a></div>
-	<div class="pre"><a href="../index-ch03-11-back.html">上一章</a></div>
+	<div class="title">第五章：家人唾罵</div>
+	<div class="previous"><a href="index-ch05-r31-05.html"><span>◀︎</span></a></div>
+	<div class="next"><a href="index-ch05-r31-06.html"><span>▶︎</span></a></div>
 	<img src="../images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
 		<div class="slideaudio">
 			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
 		</div>
 	<img src="../images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw;bottom: 4.2vh;cursor: pointer;" alt="0">
 	</div>
+	
 	<div class="main">
-		<img src="../images/ch04/final.jpg" style="width: 100vw;height: 100vh; position: fixed; top: 0;" alt="01">
+		<img src="../images/ch05/worng3-1-06.jpg" style="width: 100vw; position: fixed;top: 0px;" alt="01">
 	</div>
 	
-	<audio autoplay loop id="myaudio">
-	<source src="../sounds/index-15/final-運命 (1).mp3" type="audio/mpeg">
+	<div class="blac-main" style="width: 100vw; height: 100vh; background-color: #0F0F0F; position: fixed; opacity: 0.9; color: #FFFFFF; z-index: 30;display: block; text-align: center;">
+		<div style="display: block; text-align: center; position: fixed;width: 100vw; top: 35vh;font-size: 8vmin;letter-spacing: 5px;">這不屬於陳澄波該有的人生，<br>請重新選擇！</div>
+		<a href="index-ch05-14-choose.html" style="font-size: 16px; display: block; text-align: center; border: none; border-radius: 3px; color: #2B2B2B; background-color: #FFFFFF; opacity: 0.9;cursor: pointer;position: fixed;width: 170px; height: 30px;left: 50%; margin-left: -100px; top: 60vh;text-decoration: none;line-height: 30px;letter-spacing: 2px;">回到選擇頁面</a>
+	
+	</div>
+	
+	<audio autoplay id="myaudio">
+	<source src="" type="audio/mpeg">
 	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
 	</audio>
 	
-		<script type="text/javascript">
+	<script type="text/javascript">
 		var audio=document.getElementById("myaudio");
 		var slider=document.getElementById("myRange");
 		var loud = document.getElementById("ker"); 
@@ -52,9 +63,8 @@
 			}
 			
 		}
-		
-		
 	</script>
+	
 	
 </body>
 </html>
