@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>嘉義街外-陳澄波</title>
+	<link rel="stylesheet" href="../CSS/style-choose.css">
+	<link rel="stylesheet" href="../CSS/normalize.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+	
+	<div class="header">
+		
+	</div>
+	
+	<div class="footer">
+	<div class="index"><a href="../index-1.html">| 回首頁 |</a></div>
+	<div class="title">請告知我該如何抉擇</div>
+	<img src="../images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
+		<div class="slideaudio">
+			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
+		</div>
+	<img src="../images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw;bottom: 4.2vh;cursor: pointer;" alt="0">
+	</div>
+	
+	<div class="main">
+		<img src="../images/ch03/correct/correct-06-00.jpg" style="width: 100vw; position: fixed;top: -70px;" alt="01">
+	</div>
+	
+	<div class="choose">
+		<a href="index-ch04-r2-01.html"><img src="../images/ch04/correct-10-choose3.png" alt="01" class="cho-pic"></a>
+		<a href="index-ch04-r1-01.html"><img src="../images/ch04/correct-10-choose2.png" alt="02" class="cho-pic"></a>
+		<a href="index-ch04-11.html"><img src="../images/ch04/correct-10-choose1.png" alt="03" class="cho-pic"></a>
+	</div>
+	
+	<audio autoplay id="myaudio">
+	<source src="" type="audio/mpeg">
+	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
+	</audio>
+	
+	<script type="text/javascript">
+		var audio=document.getElementById("myaudio");
+		var slider=document.getElementById("myRange");
+		var loud = document.getElementById("ker"); 
+		function volcotrl(){
+				audio.volume = slider.value;
+				if(audio.volume==0 && slider.value==0){
+				   loud.src = "images/speaker2.png";
+				   }else{
+				   loud.src = "images/speaker.png";
+				   }
+			}
+		
+		function ap(){
+			if(audio.volume!=0 || slider.value !=0){
+				loud.src = "images/speaker2.png";
+				audio.volume = slider.value = 0;
+			}else {
+				loud.src = "images/speaker.png";
+				audio.volume = slider.value = 0.5;
+			}
+			
+		}
+	</script>
+	
+	
+</body>
+</html>
