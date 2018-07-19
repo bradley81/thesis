@@ -7,21 +7,21 @@
 	<link rel="stylesheet" href="CSS/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
-<body onload="init();">
+<body id="element">
 	<header class="site-header">
 		<div class="subject">嘉義街外-陳澄波</div>
 		<div class="subject-En">Outside Chiayi Street-Chen Cheng-po</div>
 		<div class="hyper">
-			<ul class="menu">
+			<!--<ul class="menu">
 				<li><a href="index-1.html"></a></li>
 				<li><a href=""></a></li>
 				<li><a href=""></a></li>
 				<li><a href=""></a></li>
-			</ul>
+			</ul>-->
 		</div>
 	</header>
 	<img class="handsome" src="images/帝展動態(黑線).gif" alt="charactor">
-	<a href="index-2.html"><button class="reading"><span>開始閱讀</span></button></a>	
+	<a href="index-2.html"><button class="reading" id="fullscreen"><span>開始閱讀</span></button></a>	
 	<div id="hebe"></div>
 	<div id="btn" onClick="alert();"><span>×</span></div>
 	<div id="model">
@@ -54,6 +54,24 @@
 		$('#canvas').css('margin-top', moveY + 'px');
 		});
 	</script>
+	
+	<script type="text/javascript">
+		var element=document.getElementById("element");
+		var fullscreen=document.getElementById("fullscreen");
+		
+		fullscreen.addEventListener("click",function(){
+			if(element.requestFullscreen){
+				element.requestFullscreen();
+			}else if(element.webkitRequestFullscreen){
+				element.webkitRequestFullscreen();
+			}else if(element.mozRequestFullScreen){
+				element.mozRequestFullScreen();
+			}else if (element.msRequestFullscreen){
+				element.msRequestFullscreen;
+			}
+		});
+	</script>
+	
 	<footer class="site-footer">
 		<div class="copyright">
 		Copyright@2018 Lin Yueh-feng, Graduate Institute of Human Resource and eLearning Technology, National Tsing Hua University / 網站版面最佳瀏覽解析度為1920*1080。請使用電腦版 Google Chrome 或 Firefox 瀏覽器閱覽。The best way to view our website is at 1920*1080 pixel screen resolution.
