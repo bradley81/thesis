@@ -57,9 +57,9 @@
 	
 	<script type="text/javascript">
 		var element=document.getElementById("element");
-		var fullscreen=document.getElementById("fullscreen");
+		var fullscreen=document.getElementById("btn");
 		
-		element.addEventListener("load",function(){
+		fullscreen.addEventListener("click",function(){
 			if(element.requestFullscreen){
 				element.requestFullscreen();
 			}else if(element.webkitRequestFullscreen){
