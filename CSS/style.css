@@ -82,6 +82,16 @@
 	margin-left: -165px;
 	box-shadow: 0px 0px 15px black;
 }
+.explain{
+	font-family: 'cwTeXFangSong', 'Serif';
+	letter-spacing: 2px;
+	color:#FFFFFF;
+	font-size: 12px;
+	position: fixed;
+	right: 4vw;
+	top: 2.6vh;
+	line-height: 16px;
+}
 
 .reading{
 	color: #FAFAFA;
