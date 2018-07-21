@@ -5,6 +5,11 @@
 	<link rel="stylesheet" href="CSS/style3.css">
 	<link rel="stylesheet" href="CSS/normalize.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+	@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);</style>
 </head>
 
 <body>
@@ -19,10 +24,7 @@
 	<div class="previous"><a href="index-ch03-wr-05.html"><span>◀︎</span></a></div>
 	<div class="next"><a href=""><span>▶︎</span></a></div>
 	<img src="images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
-		<div class="slideaudio">
-			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
-		</div>
-	<img src="images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw; bottom: 4.2vh;cursor: pointer;" alt="0">
+		
 	</div>
 	
 	<div class="main">
@@ -31,8 +33,8 @@
 	</div>
 	
 	<div class="blac-main" style="width: 100vw; height: 100vh; background-color: #0F0F0F; position: fixed; opacity: 0.9; color: #FFFFFF; z-index: 30;display: block; text-align: center;">
-		<div style="display: block; text-align: center; position: fixed;width: 100vw; top: 35vh;font-size: 8vmin;letter-spacing: 5px;">這不屬於陳澄波該有的人生，<br>請重新選擇！</div>
-		<a href="index-ch03-07.html" style="font-size: 16px; display: block; text-align: center; border: none; border-radius: 3px; color: #2B2B2B; background-color: #FFFFFF; opacity: 0.9;cursor: pointer;position: fixed;width: 170px; height: 30px;left: 50%; margin-left: -100px; top: 60vh;text-decoration: none;line-height: 30px;letter-spacing: 2px;">回到選擇頁面</a>
+		<div style="font-family: 'Noto Sans TC', serif; display: block; text-align: center; position: fixed;width: 100vw; top: 35vh;font-size: 8vmin;letter-spacing: 5px;">這不屬於陳澄波該有的人生，<br>請重新選擇！</div>
+		<a href="index-ch03-07.html" style="font-family: 'Noto Sans TC', serif; font-size: 16px; display: block; text-align: center; border: none; border-radius: 3px; color: #2B2B2B; background-color: #FFFFFF; opacity: 0.9;cursor: pointer;position: fixed;width: 170px; height: 30px;left: 50%; margin-left: -100px; top: 60vh;text-decoration: none;line-height: 30px;letter-spacing: 2px;">回到選擇頁面</a>
 	
 	</div>
 	
@@ -41,30 +43,7 @@
 	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
 	</audio>
 	
-	<script type="text/javascript">
-		var audio=document.getElementById("myaudio");
-		var slider=document.getElementById("myRange");
-		var loud = document.getElementById("ker"); 
-		function volcotrl(){
-				audio.volume = slider.value;
-				if(audio.volume==0 && slider.value==0){
-				   loud.src = "images/speaker2.png";
-				   }else{
-				   loud.src = "images/speaker.png";
-				   }
-			}
-		
-		function ap(){
-			if(audio.volume!=0 || slider.value !=0){
-				loud.src = "images/speaker2.png";
-				audio.volume = slider.value = 0;
-			}else {
-				loud.src = "images/speaker.png";
-				audio.volume = slider.value = 0.5;
-			}
-			
-		}
-	</script>
+	
 	
 	
 </body>
