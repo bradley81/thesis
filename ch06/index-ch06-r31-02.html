@@ -19,46 +19,14 @@
 	<div class="previous"><a href="index-ch06-r31-01.html"><span>◀︎</span></a></div>
 	<div class="next"><a href="index-ch06-r31-03.html"><span>▶︎</span></a></div>
 	<img src="../images/logo.gif" style="height: 7.5vh; position: fixed; bottom: 3vh; left: 5vw;" alt="logo">
-		<div class="slideaudio">
-			<input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" oninput="volcotrl()" id="myRange">
-		</div>
-	<img src="../images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw;bottom: 4.2vh;cursor: pointer;" alt="0">
+	
 	</div>
 	
 	<div class="main">
 		<img src="../images/ch06/wrong3-1-02.jpg" style="width: 100vw; position: fixed;top: 0px;" alt="01">
 	</div>
 	
-	<audio autoplay id="myaudio">
-	<source src="" type="audio/mpeg">
-	Your browser does not support the audio element.請使用Google Chrome 或 Fire Fox 瀏覽。
-	</audio>
-	
-	<script type="text/javascript">
-		var audio=document.getElementById("myaudio");
-		var slider=document.getElementById("myRange");
-		var loud = document.getElementById("ker"); 
-		function volcotrl(){
-				audio.volume = slider.value;
-				if(audio.volume==0 && slider.value==0){
-				   loud.src = "images/speaker2.png";
-				   }else{
-				   loud.src = "images/speaker.png";
-				   }
-			}
-		
-		function ap(){
-			if(audio.volume!=0 || slider.value !=0){
-				loud.src = "images/speaker2.png";
-				audio.volume = slider.value = 0;
-			}else {
-				loud.src = "images/speaker.png";
-				audio.volume = slider.value = 0.5;
-			}
-			
-		}
-	</script>
-	
+
 	
 </body>
 </html>
