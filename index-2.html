@@ -32,19 +32,23 @@
 	
 	#ppimg{
 		position: fixed;
-		left: 50%;
-		top: 50%;
-		margin-left: -50px;
-		margin-top: -50px;
+	    bottom: 4vh;
+		right:14vw; 
+		z-index: 7;
+		cursor: pointer;
+		transition: 1s;
+		
 	}
+	#ppimg:hover{
+		filter: drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0.5px white) drop-shadow(0px 0px 0.1px white);
+	}
+	
 </style>
 </head>
 
 <body onLoad="myFunction()">
 	<div class="bcd"></div>
-	<div id="pp" onClick="play()" style="z-index: 7; width: 100vw; height: 100vh; position: fixed;cursor: pointer;">
-	<img src="images/play.png" width="100px" height="100px" id="ppimg"  alt="01">
-	</div>
+	<img src="images/pause.png" width="30px" height="30px" id="ppimg" onClick="play()"  alt="01">
 	<video autoplay id="myVideo">
 		<source src="video/01/1947(low3).webm" type="video/webm">
 		Your browser does not support HTML5 video. 請使用 Google Chrome或Fire Fox瀏覽。
@@ -52,6 +56,13 @@
 	<div class="loader" id="lad"></div>
 	<a href="index-3-begin.html"><button class="reading"><span>下一頁</span></button></a>
 	<a href="index-3-begin.html"><span class="reading2">跳過(Skip)</span></a>
+	
+	
+	
+	
+	
+	
+	
 	<script>
 		function myFunction(){
 			var x = document.getElementById("lad");
@@ -65,10 +76,10 @@
 		function play(){
 			if(vid.paused){
 				vid.play();
-				btn.style.visibility="hidden";
+				btn.src="images/pause.png";
 			}else{
 				vid.pause();
-				btn.style.visibility="visible";
+				btn.src="images/play.png"
 				
 			}
 			
