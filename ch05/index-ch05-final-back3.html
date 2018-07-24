@@ -36,18 +36,18 @@
 		function volcotrl(){
 				audio.volume = slider.value;
 				if(audio.volume==0 && slider.value==0){
-				   loud.src = "images/speaker2.png";
+				   loud.src = "../images/speaker2.png";
 				   }else{
-				   loud.src = "images/speaker.png";
+				   loud.src = "../images/speaker.png";
 				   }
 			}
 		
 		function ap(){
 			if(audio.volume!=0 || slider.value !=0){
-				loud.src = "images/speaker2.png";
+				loud.src = "../images/speaker2.png";
 				audio.volume = slider.value = 0;
 			}else {
-				loud.src = "images/speaker.png";
+				loud.src = "../images/speaker.png";
 				audio.volume = slider.value = 0.5;
 			}
 			

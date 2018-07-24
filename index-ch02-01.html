@@ -29,11 +29,25 @@
 		100% {transform: rotate(360deg);}
 		
 	}
+	
+	#ppimg{
+		position: fixed;
+	    bottom: 4vh;
+		right:5vw; 
+		z-index: 7;
+		cursor: pointer;
+		transition: 1s;
+		
+	}
+	#ppimg:hover{
+		filter: drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0.5px white) drop-shadow(0px 0px 0.1px white);
+	}
 </style>
 </head>
 
 <body onLoad="myFunction()">
 	<div class="bcd"></div>
+	<img src="images/pause.png" width="30px" height="30px" id="ppimg" onClick="play()"  alt="01">
 	<video autoplay  id="myVideo">
 		<source src="video/03/Produce (2) (1).mp4" type="video/mp4">
 		Your browser does not support HTML5 video. 請使用 Google Chrome或Fire Fox瀏覽。
@@ -46,7 +60,27 @@
 			x.style.visibility="hidden";
 		}
 	</script>  
+	
+	<script>
+		var vid = document.getElementById("myVideo");
+		var btn = document.getElementById("ppimg");
+		function play(){
+			if(vid.paused){
+				vid.play();
+				btn.src="images/pause.png";
+			}else{
+				vid.pause();
+				btn.src="images/play.png"
+				
+			}
+			
+		}
 		
+		
+	</script>
+	
+	
+	
 	<a href="index-ch02-02.html"><button class="reading"><span>下一頁</span></button></a>
 </body>
 </html>
