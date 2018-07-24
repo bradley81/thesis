@@ -29,11 +29,22 @@
 		100% {transform: rotate(360deg);}
 		
 	}
+	
+	#ppimg{
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -50px;
+		margin-top: -50px;
+	}
 </style>
 </head>
 
 <body onLoad="myFunction()">
 	<div class="bcd"></div>
+	<div id="pp" onClick="play()" style="z-index: 7; width: 100vw; height: 100vh; position: fixed;cursor: pointer;">
+	<img src="images/play.png" width="100px" height="100px" id="ppimg"  alt="01">
+	</div>
 	<video autoplay id="myVideo">
 		<source src="video/01/1947(low3).webm" type="video/webm">
 		Your browser does not support HTML5 video. 請使用 Google Chrome或Fire Fox瀏覽。
@@ -47,5 +58,23 @@
 			x.style.visibility="hidden";
 		}
 	</script>  
+		
+	<script>
+		var vid = document.getElementById("myVideo");
+		var btn = document.getElementById("ppimg");
+		function play(){
+			if(vid.paused){
+				vid.play();
+				btn.style.visibility="hidden";
+			}else{
+				vid.pause();
+				btn.style.visibility="visible";
+				
+			}
+			
+		}
+		
+		
+	</script>
 </body>
 </html>
