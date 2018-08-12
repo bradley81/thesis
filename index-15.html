@@ -5,6 +5,37 @@
 	<link rel="stylesheet" href="CSS/style5.css">
 	<link rel="stylesheet" href="CSS/normalize.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		.click{
+			position: relative;
+			display: inline-block;
+			transition: 1s;
+		}
+		
+		.dot{
+			transition: .5s;
+		}
+		
+		.dot:hover{
+			filter: drop-shadow(0px 0px 4px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0.5px white);
+		}
+		
+		.click .tooltip{
+			visibility: hidden;
+			width: 15vw;
+			height: 15vh;
+			border: 5px solid #5C5C5C;
+			position: absolute;
+			z-index: 4;
+		}
+		
+		
+		.click:hover .tooltip{
+			visibility: visible;
+		}
+		
+		
+	</style>
 </head>
 
 <body>
@@ -19,9 +50,31 @@
 		</div>
 	<img src="images/speaker.png" id="ker" onClick="ap()" oninput="volcotrl()" style="height:3vh; position: fixed; right: 27.5vw;bottom: 4.2vh;cursor: pointer;" alt="0">
 	</div>
+	
+	
+	
 	<div class="main">
-		<img src="images/opening/final/final.jpg" style="width: 100vw;height: 100vh; position: fixed; top: 0;" alt="01">
+		<div class="click"><a href="index-3.html"><img src="images/opening/final/dot/images/final_03.png" class="dot" style="width: 5vw; height: 10vh; position: fixed; left: 30.6vw; top: 41vh; z-index: 3;" alt="03"></a><img src="images/opening/02.jpg" class="tooltip" style="left: 36vw; top: 50vh;" alt="4"></div>
+		
+		<div class="click"><a href="index-11.html"><img src="images/opening/final/dot/images/final_05.png" class="dot" style="width: 5.5vw; height: 10vh; position: fixed; left: 50.6vw; top: 39vh; z-index: 3;" alt="03"></a><img src="images/opening/12-story/12.gif" class="tooltip" style="left: 56vw; top: 50vh;" alt="4"></div>
+		
+		<div class="click"><a href="index-14.html"><img src="images/opening/final/dot/images/final_07.png" class="dot" style="width: 5.5vw; height: 10vh; position: fixed; left: 70.6vw; top: 40vh; z-index: 3;" alt="03"></a><img src="images/opening/shot.PNG" class="tooltip" style="left: 74vw; top: 50vh;" alt="4"></div>
+		
+		
+		
+		
+		<img src="images/opening/final/text/images/final_03.png"  style="width: 6vw; height: 60vh; position: fixed; left: 30vw; top: 50vh; z-index: 2;" alt="02">
+		<img src="images/opening/final/text/images/final_05.png" style="width: 6vw; height: 65vh; position: fixed; left: 50vw; top: 50vh; z-index: 2;" alt="02">
+		
+		<img src="images/opening/final/text/images/final_07.png"  style="width: 6vw; height: 65vh; position: fixed; left: 70vw; top: 50vh; z-index: 2;" alt="02">
+		
+		<img src="images/opening/final/bg/final.jpg" style="width: 100vw;height: 100vh; position: fixed; top: 0; z-index: 1;" alt="01">
+		
+		
 	</div>
+	
+	
+	
 	
 	<audio autoplay loop id="myaudio">
 	<source src="sounds/index-15/final-運命 (1).mp3" type="audio/mpeg">
